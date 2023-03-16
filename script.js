@@ -47,12 +47,12 @@ window.onscroll = () => {
     ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
     ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
     ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-    ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+    ScrollReveal().reveal('.home-content p, ..about-content', { origin: 'right' });
 
      /*==================== typed js ====================*/
 
     const typed = new Typed('.multiple-text', {
-        strings: ['Application Developer', 'Educated Personal Trainer', 'Athlete'],
+        strings: ['Application Developer'],
         typedSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,

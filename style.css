@@ -188,12 +188,13 @@ span {
     width: 20vw;
     border-radius: 100px;
     box-shadow: 0 0 1rem var(--main-color);
+    margin: 150px;
 }
 
 .heading {
     text-align: center;
     font-size: 4.5rem;
-
+    margin: 20px;
 }
 
 .about-content h2 {
@@ -209,6 +210,10 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+.about-content h5 {
+    font-size: 2.6rem;
 }
 
 .services h2 {
