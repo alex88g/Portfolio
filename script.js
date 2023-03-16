@@ -1,3 +1,18 @@
+/*const apiUrl = 'https://opentdb.com/api.php?amount=10&category=18&difficulty=easy';
+
+const button = document.querySelector('#fetch'); -->
+
+button.addEventListener('click', async e => {
+    console.log('1. click click');
+    
+    const response = await fetch(apiUrl);
+    console.log('2. got response:', response);
+
+    const data = await response.json();
+    console.log('3. got data:', data);
+})
+
+
 /*==================== scroll sections avtive link ====================*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
