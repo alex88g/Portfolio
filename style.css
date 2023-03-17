@@ -89,7 +89,7 @@ section {
 
 .home-img img {
     width: 20vw;
-    animation: floateImage 4s ease-in-out infinite;
+    animation: floatImage 4s ease-in-out infinite;
     border-radius: 100px;
     box-shadow: 0 0 5rem var(--main-color);
      
