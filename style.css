@@ -188,7 +188,7 @@ span {
     width: 20vw;
     border-radius: 100px;
     box-shadow: 0 0 1rem var(--main-color);
-    margin: 150px;
+    margin: 100px;
 }
 
 .heading {
@@ -459,7 +459,12 @@ span {
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    }   
+        display: none;
+    }  
+    
+    .navbar.active {
+        display: block;
+    }
 
     .navbar a {
         display: block;
