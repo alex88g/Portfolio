@@ -322,22 +322,44 @@ span {
     display: flex;
 }
 
-.project-box1 img {
-    width: 10%;
-    height: 10%;
+.project-box img {
+    width: 15%;
+    height: 15%;
     margin-left:  20px;
+    margin-top: 100px;
 }
 
 .project-box2 img {
-    width: 10%;
-    height: 10%;
+    width: 19%;
+    height: 19%;
     margin-left: 20px;
+    margin-top: 20px;
 }
 
-.project-box2 img {
-    width: 10%;
-    height: 10%;
+.project-box3 img {
+    width: 31%;
+    height: 31%;
     margin-left: 20px;
+    margin-top: 100px;
+}
+
+.project-box h6 {
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.project-box2 h6 {
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.project-box3 h6 {
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-top: 100px;
 }
 
 

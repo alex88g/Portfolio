@@ -42,7 +42,7 @@
                     as an application developer (Android and iOS) in Stockholm.
                     As a person, I am social, goal-oriented and meticulous. 
                     I want to work efficiently towards a goal.
-                    Right now I am looking for LIA internship from August 21 to October 7,
+                    Right now I am looking for LIA internship from August 21 to October 13,
                     2023 where I can develop and grow in my professional role.
                 </p>
         <div class="social-media">
@@ -165,7 +165,7 @@
                     <h4>iOS (UIKit & SwiftUI)</h4>
                     <p>Projects
                      </p>
-                     <a href="#project-box1"><i class='bx bx-link-external'></i></a>
+                     <a href="#project-box"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
 
@@ -223,9 +223,9 @@
         </section>
 
         <!-- project pictures -->
-        <section class="project-box1" id="project-box1">
-        <div class="project-box1">
-            <p> iOS(SwiftUI) EatAtHomeExpress is food delivery aplication </p>
+        <section class="project-box" id="project-box">
+        <div class="project-box">
+            <h6> iOS (SwiftUI): EatAtHomeExpress is food delivery aplication where you can order food </h6>
             <img src="images2/ios-1.png" alt="">
             <img src="images2/ios-2.png" alt="">
             <img src="images2/ios-3.png" alt="">
@@ -236,10 +236,7 @@
             <img src="images2/ios-8.png" alt="">
             <img src="images2/ios-9.png" alt="">
     </div>
-    
-
-    <div class="project-box">
-        <p> iOS(UIKit) TicTacToe is game with multiplayer and singleplayer mode </p>
+        <h6> iOS (UIKit): TicTacToe is game with multiplayer and singleplayer mode </h6>
         <img src="images2/ios1.png" alt="">
         <img src="images2/ios2.png" alt="">
         <img src="images2/ios3.png" alt="">
@@ -249,12 +246,13 @@
 
     <section class="project-box2" id="project-box2">
         <div class="project-box2">
-            <p> Android(Kotlin) SmulltrönStället (HiddenGem) finding restaurants </p>
+            <h6> Android (Kotlin): SmulltrönStället (HiddenGem) is application where you can find popular restaurants with god reviews </h6>
             <img src="images3/android1.png" alt="">
             <img src="images3/android2.png" alt="">
             <img src="images3/android3.png" alt="">
         </div>
-            <p> Android(Kotlin) Angry Cards are card game with multiplayer and singleplayer mode</p>
+
+            <h6> Android (Kotlin): Angry Cards is card game with multiplayer and singleplayer mode </h6>
             <img src="images3/android4.png" alt="">
             <img src="images3/android5.png" alt="">
             <img src="images3/android6.png" alt="">
@@ -264,10 +262,12 @@
 
     <section class="project-box3" id="project-box3">
         <div class="project-box3">
-            <p> HTML, CSS, JavaScript </p>
-            <img src="i" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <h6> Webb (HTML, CSS, JavaScript): Responsive Personal Portfolio is a web page where companies can more easily get in touch, see more detailed information about a person and occupation in order to offer a job according to the need </h6>
+            <img src="images4/portfolio1.png" alt="">
+            <img src="images4/portfolio2.png" alt="">
+            <img src="images4/portfolio3.png" alt="">
+            <img src="images4/portfolio4.png" alt="">
+            <img src="images4/portfolio5.png" alt="">
         </div>
     </section>
 
@@ -275,20 +275,41 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me!</span></h2>
 
-            <form action="#">
+            <form onsubmit="sendEmail(); reset(); return false;">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
                 </div>
 
                 <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
+                    <input type="number" id="phone" placeholder="Mobile Number" required>
+                    <input type="text" id="subject" placeholder="Email Subject" required>
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </form>
-        </section>
+         </section>
+
+        <!-- Implementing the email functions and token-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    SecureToken: "cd63db1c-49b9-438e-a822-0f1ffbb8a5f7",
+                    
+                    To : 'alexander.gallorini@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Enquiry",
+                    Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email " + document.getElementById("email").value
+                    + "<br> Phone " + document.getElementById("phone").value
+                    + "<br> Subject " + document.getElementById("subject").value 
+                    + "<br> Message " + document.getElementById("message").value
+                }).then(
+                message => alert("Message Sent Successfully")
+                );
+            }
+        </script>
 
         <!-- footer design -->
         <footer class="footer">
@@ -300,16 +321,14 @@
                 <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
             </div>
         </footer>
-
+        
         <!-- scroll reveal-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!-- typed js -->
         <script src="http://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-        
          <!-- custom js -->
          <script src="script.js"></script>
-        </body>
-
-        </html>
+         </body>
+    </html>
