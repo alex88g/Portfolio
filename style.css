@@ -95,6 +95,7 @@ section {
      
 }
 
+
 @keyframes floatImage {
 
     0% {
@@ -159,6 +160,7 @@ span {
 }
 
 .btn {
+    cursor:  pointer;
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);

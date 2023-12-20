@@ -46,12 +46,16 @@
                     I want to work efficiently towards a goal.
                 </p>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/alexander-gallorini-784b07218/"><i class='bx bxl-linkedin-square' ></i></a>
-            <a href="https://github.com/alex88g"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/alexander-gallorini-784b07218/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/alex88g" target="_blank"><i class='bx bxl-github'></i></a>
+            
             <!--<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
             <a href="#"><i class='bx bxl-facebook-circle' ></i></a>-->
+
          </div>
-         <a href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=e1489cb688&attid=0.1&permmsgid=msg-a:r5576874717584109904&th=186e9df45e868aba&view=att&disp=inline&saddbat=ANGjdJ_R0DU0epabsydZ8jAuio2l4BkFjUxCZzttlzquEnxK8TYc4PZ7C5FNbaH5sHrivZrbmVfx9eH2s0ivEA8JGQf8JeMPXVW2n0Ut4FxBRujfZvNcJgvxWIDPlJhHHS5pwRAPWmwvJuKB7Q_q9TRIRkFT8D2VumKXHu_iQQ49yfZFmkwf0SgbyM1vrNUpahybfXqA0bxPHgK5j2RqFGcYOYDOaGEfplPsJtgXuQluWz3NiCNR1MSLsInYDkEmXOsHjNoYkepkrh4fk85QJvnhz4Lti4b4OqBG2k0Z6PCyKZSQdLUo04Ls-hLH1CtdN8WDBr6CsIUSb_-ZR92KKuKSJfQNc64yQ77Tz9yXr7KpGqcLmYVz1GKKwVdFNc8QuMbO8HzgtyobmbXasLGxclumzDFo9H4F8_DCWAgU5OYX2gcxyvctvEjdwTRTkTaPO__aAtTtjR-8eVzJ_MdlFUi9UMSvtrC93jYh6ml9HuyU90OhJs-smPuYnYMHxUkGfdnXgHPmflHsWUHH9thYl7qnTEnz8Ood8CxeXKv9AUQ0lWBA06KzMA8KBKDTuytCKf1viiRCXeHpTKlqMh_OiTk56dADSQvfjDANDqcoNwSeehI9U1slG_kqk2c1pSwnxiBsFEkGas0mVyPEInt2iL7C7xu5OFi30jhdaQugB-IhpdRQzuR-wByndFxLK36ByWmZ6dCOF43Y8vXLBKL6mAO6H44TvR0ip_1pfFizKHULB_ZuetkU8nChvm7at9cZ14cmBhNFLjTyW8pOX0Ed8dUFGqECEZtAmHcJnet8V_S-j7jE3sQZksOFG1u1-YwgnZ4pWAywmaGm_kB5V4GBWZBPX7zKKI0LK0QVOVEbYHian4rCM9VIZ17F7W0uUfKanVDdyUSdxyH67qBOtxOpdgnHihq3Qw01NKKcPUFXXkqdhTvVU7vPkR-nEVDT_HW5HhalLnqmMoHjYwn7zsPoWnCyCe1kQIV_T0xL1XkiIxBorwbFJF9lbijT-ixjuIc" class="btn">Download CV</a>
+         <a href="https://drive.google.com/file/d/1je6jIv1ZYisKmKGGRWLIB13-NhvKFO3m/view?usp=sharing" class="btn" id="cvLink" target="_blank">Download CV</a>
+
+
         </div>
 
         <div class="home-img">
@@ -90,10 +94,6 @@
                 <p>
                     Objectorienterad analys och design
                 </p> 
-
-                <h5>
-                    Upcoming courses
-                </h5>
                 
                 <p>
                     Cross-plattform-utveckling
@@ -302,7 +302,7 @@
                 </div>
 
                 <div class="input-box">
-                    <input type="number" id="phone" placeholder="Mobile Number" required>
+                    <input type="text" id="phone" placeholder="Mobile Number" required>
                     <input type="text" id="subject" placeholder="Email Subject" required>
                 </div>
                 <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
@@ -334,24 +334,26 @@
          <!--document.getElementById("email").value-->
          <script src="https://smtpjs.com/v3/smtp.js"></script>
          <script>
-             function sendEmail(){
-                 let name = document.getElementById("name").value;
-                 let email = document.getElementById("email").value;
-                 let contact = document.getElementById("subject").value;
-                 let message = document.getElementById("message").value;
-         
-                 let body = "Name: " + name + "<br> Email:" + email + "<br> Phone " + contact + "<br> Subject " + contact + "<br>" + message;
-         
-                 Email.send({
-                     SecureToken: "cd63db1c-49b9-438e-a822-0f1ffbb8a5f7",
-                     To : 'alexander.gallorini@gmail.com',
-                     From : "alexander.gallorini@gmail.com",
-                     Subject : "New Contact Form Enquiry",
-                     Body : body // Pass the body variable here
-                 }).then(
-                 message => alert("Message Sent Successfully")
-                 );
-             }
+             function sendEmail() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let subject = document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+
+    let body = "Name: " + name + "<br> Email: " + email + "<br> Phone: " + phone + "<br> Subject: " + subject + "<br> Messages: <br><br>" + message ;
+
+    Email.send({
+        SecureToken: "cd63db1c-49b9-438e-a822-0f1ffbb8a5f7",
+        To: 'alexander.gallorini@gmail.com',
+        From: "alexander.gallorini@gmail.com",
+        Subject: "New Message From Portfolio",
+        Body: body
+    }).then(
+        message => alert("Message Sent Successfully")
+    );
+}
+
          </script>
          
         </script>
