@@ -4,426 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Responsive Personal Portfolio Webbapplikationsutveckling | IT - Högskola </title>
+    <title>Responsive Personal Portfolio | Alexander Gallorini</title>
 
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <!-- custom css -->
-    <link rel="stylesheet"  href="style.css"
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+     <!-- Header design -->
+     <header class="header">
+
+            <!-- Logotyp -->
+        <a href="index.html" class="logo">Portfolio</a>
         
         <i class='bx bx-menu' id="menu-icon"></i>
-    
+   
+        <!-- Navigering -->
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-            <!--<a href="#references">References</a>-->
-            
+         
+                <!-- Hem länk -->
+               <a href="index.html" accesskey="h" class="active" aria-label="Hem">Home</a>
 
-           </nav>
-         </header>
+                <!-- Om oss länk -->
+                <a href="about.html" accesskey="a" aria-label="Om oss">About</a>
 
-         <!-- Home section design -->
-         <section class="home" id="home">
-            <div class="home-content">
-                <h3>Hello, It's Me</h3>
-                <h1>Alexander Gallorini</h1>
-                <h3>I'm an <span class="multiple-text"></span></h3>
-                <p> 
-                    I am 35 years old. As an individual, I am sociable, goal-oriented, and meticulous. Coding is my greatest interest. I aim to work efficiently towards a goal where I can develop and grow professionally. 
-                    I look forward to becoming part of a team where I can demonstrate my ambition and skills.
-                </p>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/alexander-gallorini-784b07218/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="https://github.com/alex88g" target="_blank"><i class='bx bxl-github'></i></a>
-            
-            <!--<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>-->
+                <!-- Tjänster länk -->
+                <a href="services.html" accesskey="s" aria-label="Tjänster">Services</a>
 
-         </div>
-         <a href="https://drive.google.com/file/d/12OYNEFyrXkniRTX9BTuY4wWdTcbrRZUB/view?usp=sharing" class="btn" id="cvLink" target="_blank">Download CV</a>
+                <!-- Portfolio länk -->
+                <a href="portfolio.html" accesskey="p" aria-label="Portfolio">Portfolio</a>
+
+                <!-- Kontakt länk -->
+                <a href="contact.html" accesskey="c" aria-label="Kontakt">Contact</a>
+         <!-- Uncomment this if needed in the future -->
+            <!-- <a href="#references">References</a> -->
+        </nav>
+    </header>
 
 
+
+      <!-- Home section design -->
+      <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Alexander Gallorini</h1>
+            <h3>I'm an <span class="multiple-text"></span></h3>
+            <p> 
+                I am 35 years old. As an individual, I am sociable, goal-oriented, and meticulous. Coding is my greatest interest. I aim to work efficiently towards a goal where I can develop and grow professionally. 
+                I look forward to becoming part of a team where I can demonstrate my ambition and skills.
+            </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/alexander-gallorini-784b07218/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/alex88g" target="_blank"><i class='bx bxl-github'></i></a>
+                <!-- Uncomment these for more social links -->
+                <!-- <a href="#"><i class='bx bxl-instagram-alt'></i></a> -->
+                <!-- <a href="#"><i class='bx bxl-facebook-circle'></i></a> -->
+            </div>
+            <a href="https://drive.google.com/file/d/1aTQ0P5oa3dL4hAW7GoCSian7McI3koZt/view?usp=sharing" class="btn" id="cvLink" target="_blank">Download CV</a>
         </div>
 
         <div class="home-img">
-            <img src="images/home.png" alt="">
-        </div>
-        </section>
-
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.png" alt="">
-        </div>
-        
-        <div class="about-content">
-                <h2 class="heading">About <span>Me</span></h2>
-                <h3>I have completed several courses such as:</h3>
-                <p> 
-                    Androidutveckling (Kotlin)
-                </p>
-                <p>
-                    Databashantering
-                </p>
-                   
-                <p>
-                    Programmering iOS- Objective- C & Swift (UIKit, SwiftUI)
-                </p>    
-                
-                <p>
-                    Agil Metodik
-                </p>
-
-                <p>
-                    Webbapplikationsutveckling (HTML, CSS, JavaScript)
-                </p>
-
-                <p>
-                    Objectorienterad analys och design
-                </p> 
-                
-                <p>
-                    Cross-plattform-utveckling
-                </p>   
-
-                <p>
-                    Backendutveckling med C#
-                </p>
-                
-                <!-- <a href="#" class="btn">Read More</a> -->
-            </div>
-            </section>
-
-          <!-- section services design -->
-          <section class="services" id="services">
-            <h2 class="heading">Our <span>Services</span></h2>
-
-        <div class="services-container">
-          <div class="services-box">
-            <i class='bx bxl-android'></i>
-            <h3>Android</h3>
-            <p>
-                Android programming is the process of developing mobile applications for the Android operating system. By utilizing Android programming services, I can design and create apps for Android devices running on Android. Android programming services encompass user interface development, functionality implementation, integration of various APIs and services, testing, debugging, and app distribution to Google Play Store and other marketplaces. The services can be performed using various programming languages and development tools; specifically, I offer services using the Kotlin programming language with the Android Studio tool.
-            </p>
-                <!-- <a href="#" class="btn">Menu</a> -->
-          </div>
-
-            <div class="services-box">
-                <i class='bx bxl-apple'></i>
-              <h3>iOS</h3>
-              <p>
-                
-                iOS programming is the process of developing mobile applications for the Apple operating system. Through iOS programming services, I can offer and create apps that feature user-friendly design, robust functionality, and excellent performance. This includes the development of user interfaces using Interface Builder and Auto Layout, implementation of functionality using object-oriented programming and the Cocoa Touch Framework, integration of various APIs and services, testing, debugging, and distributing apps to the Apple App Store. iOS programming can be performed using various programming languages, including Swift, and tools such as Xcode.
-                </p>
-                  <!-- <a href="#" class="btn">Menu</a> -->
-           </div>
-
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-              <h3>Web Application Developer</h3>
-              <p>
-                Web development is the process of creating websites and web applications using various programming languages. My services include designing the website's layout and user interface, developing functionality with different programming languages and frameworks, integrating databases, utilizing web APIs and services, optimizing website performance, testing, and distribution. Specifically, I offer and execute services using HTML, CSS, and JavaScript. Tools used include integrated development environments, frameworks and libraries that assist developers in streamlining and simplifying the development process.
-    
-              </p>
-                      <!-- <a href="#" class="btn">Menu</a> -->
-                </div>    
-        </section>
-
-        <!-- portfolio section design -->
-        <section class="portfolio" id="portfolio">
-            <h2 class="heading">Latest <span>Project</span></h2>
-
-            <div class="portfolio-container">
-                <div class="portfolio-box">
-                    <img src="images/portfolio1.jpeg" alt="">
-                    <div class="portfolio-layer">
-                    <h4>iOS (UIKit & SwiftUI)</h4>
-                    <p>Projects
-                     </p>
-                     <a href="#project-box"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-                    <div class="portfolio-box">
-                        <img src="images/portfolio2.jpeg" alt="">
-                        <div class="portfolio-layer">
-                        <h4>Android (Kotlin)</h4>
-                        <p>Projects
-                         </p>
-                         <a href="#project-box2"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                    <div class="portfolio-box">
-                        <img src="images/portfolio3.jpeg" alt="">
-                        <div class="portfolio-layer">
-                        <h4>Webb (HTML, CSS, JavaScript)</h4>
-                        <p>
-                            Projects
-                     </p>
-                     <a href="#project-box3"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                    <div class="portfolio-box">
-                        <img src="images/portfolio4.jpeg" alt="">
-                        <div class="portfolio-layer">
-                            <h4>Webb (React JS)</h4>
-                        <p>
-                            Projects
-                         </p>
-                         <a href="#project-box4"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                    <div class="portfolio-box">
-                        <img src="images/portfolio5.webp" alt="">
-                        <div class="portfolio-layer">
-                        <h4>Upcoming projects</h4>
-                        <p>
-                         </p>
-                         <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                    <div class="portfolio-box">
-                        <img src="images/portfolio6.jpeg" alt="">
-                        <div class="portfolio-layer">
-                        <h4>Upcoming projects</h4>
-                        <p>
-                         </p>
-                         <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- project pictures -->
-        <section class="project-box" id="project-box">
-        <div class="project-box">
-            <h6> 
-                iOS (SwiftUI): EatAtHomeExpress is a food delivery application that allows you to order food based on searching for restaurants, ordering food items, booking restaurant tables, and features two integrated Google Maps for location services. It includes detailed descriptions, a shopping cart for orders, settings for light and dark modes, a help center about food, and functionalities for uploading pictures and addressing customer cases. Additionally, users can create an account or reset their password. The database and all data are connected and managed through Firebase, ensuring secure and efficient data handling.
-
-            </h6>
-            <img src="images2/ios-1.png" alt="">
-            <img src="images2/ios-2.png" alt="">
-            <img src="images2/ios-3.png" alt="">
-            <img src="images2/ios-4.png" alt="">
-            <img src="images2/ios-5.png" alt="">
-            <img src="images2/ios-6.png" alt="">
-            <img src="images2/ios-7.png" alt="">
-            <img src="images2/ios-8.png" alt="">
-            <img src="images2/ios-9.png" alt="">
-            <img src="images2/ios-10.png" alt="">
-            <img src="images2/ios-12.png" alt="">
-            <img src="images2/ios-13.png" alt="">
-            <img src="images2/ios-14.png" alt="">
-            <img src="images2/ios-15.png" alt="">
-            <img src="images2/ios-16.png" alt="">
-            <img src="images2/ios-17.png" alt="">
-            <img src="images2/ios-18.png" alt="">
-            <img src="images2/ios-19.png" alt="">
-            <img src="images2/ios-20.png" alt="">
-            <img src="images2/ios-21.png" alt="">
-            <img src="images2/ios-22.png" alt="">
-            <img src="images2/ios-23.png" alt="">
-            <img src="images2/ios-24.png" alt="">
-    </div>
-        <h6> iOS (UIKit): TicTacToe is a game available in both single-player and multiplayer modes, featuring an appealing design. You can enjoy playing against the computer in single-player mode, or challenge a friend in multiplayer mode. The game includes a settings section that also displays scores. </h6>
-        <img src="images2/ios1.png" alt="">
-        <img src="images2/ios2.png" alt="">
-        <img src="images2/ios3.png" alt="">
-        <img src="images2/ios4.png" alt="">
-    </div>
-
-</div>
-<h6> 
-    iOS (UIKit): AutoFilex is an auto service platform designed for entrepreneurs, allowing them to subscribe by creating an account and utilizing services tailored to their needs. Each vehicle undergoes specific routines and steps, and we are here to simplify daily life for our clients. In the example shown in the images, entrepreneurs can create accounts for their employees after subscribing. These employees can then log in and register client vehicles. The platform offers standard services, and users can add or remove services as needed. Once the details of the client and vehicle are completed, employees move to the next step. After each process—whether it’s transport, testing, washing, repair, reconditioning, or others—the status is updated, and managers receive notifications to monitor service times and current status. Entrepreneurs benefit by tracking everything employees do within the app, receiving notifications, and having exclusive rights to create and manage employee accounts, including changing passwords and details. If an employee leaves the job, the entrepreneur can easily block their account, while all data remains saved in the database (Firebase). This app features login functionality, profiles for clients and entrepreneurs, a sidebar menu, tabs for different services, filtering for case tracking, and employee notifications.  Additionally, the design is specifically tailored to match the app's theme, enhancing the overall user experience. </h6>
-<img src="images2/1ios.png" alt="">
-<img src="images2/2ios.png" alt="">
-<img src="images2/3ios.png" alt="">
-<img src="images2/4ios.png" alt="">
-<img src="images2/5ios.png" alt="">
-<img src="images2/6ios.png" alt="">
-<img src="images2/7ios.png" alt="">
-<img src="images2/8ios.png" alt="">
-</div>
-        </section>
-
-    <section class="project-box2" id="project-box2">
-        <div class="project-box2">
-            <h6> Android (Kotlin): HiddenGem is an innovative application tailored to connect food enthusiasts with top-rated local restaurants. It enables restaurant owners to showcase their establishments, ensuring that users can effortlessly locate them. The platform streamlines user interaction by offering comprehensive features for account creation, login, and password recovery, alongside a personalized profile section for individual details. Within the 'Business' activity section, proprietors have the privilege to list new dining spots. Conversely, the 'Company' section is exclusively designed for owners to manage and review their own listings. This clear distinction ensures that company owners have enhanced control and exclusive access to additional app functionalities. For the general user base, HiddenGem offers an interactive map to explore and discover eateries. Users can delve into detailed reviews, engage through comments, and visually share their dining experiences by adding and uploading photos. Additionally, the application caters to user comfort with customizable settings for switching between dark and light themes. An integrated search bar further simplifies the process, providing a seamless way to navigate through the myriad of restaurant options available.</h6>
-            <img src="images3/andro1.png" alt="">
-            <img src="images3/andro2.png" alt="">
-            <img src="images3/andro4.png" alt="">
-            <img src="images3/andro5.png" alt="">
-            <img src="images3/andro6.png" alt="">
-            <img src="images3/andro7.png" alt="">
-            <img src="images3/andro8.png" alt="">
-            <img src="images3/andro9.png" alt="">
-            <img src="images3/andro10.png" alt="">
-            <img src="images3/andro11.png" alt="">
-            <img src="images3/andro12.png" alt="">
-            <img src="images3/andro13.png" alt="">
-            <img src="images3/andro14.png" alt="">
-            <img src="images3/andro15.png" alt="">
-            <img src="images3/andro16.png" alt="">
-
-        </div>
-
-            <h6> Android (Kotlin): Angry Cards is a card game that allows users to play in single-player mode against the CPU or in multiplayer mode with a friend. Additionally, the game includes settings that enable users to customize the rules according to their preferences. There is also a help center where players can read about the game's rules. </h6>
-            <img src="images3/android-1.png" alt="">
-            <img src="images3/android-2.png" alt="">
-            <img src="images3/android-3.png" alt="">
-            <img src="images3/android-4.png" alt="">
-            <img src="images3/android-5.png" alt="">
-            <img src="images3/android-6.png" alt="">
-            <img src="images3/android-7.png" alt="">
-            <img src="images3/android-8.png" alt="">
-            <img src="images3/android-9.png" alt="">
-            <img src="images3/android-10.png" alt="">
-            <img src="images3/android-11.png" alt="">
-            <img src="images3/android-12.png" alt="">
-            <img src="images3/android-13.png" alt="">
+            <img src="images/home.png" alt="Home image">
         </div>
     </section>
-
-    <section class="project-box3" id="project-box3">
-        <div class="project-box3">
-            <h6> React (Next.js): Aloe Vera is a web application where users can order all types of Aloe Vera products. It is designed to cater to both older and younger individuals, ensuring they can easily navigate through the web application with concise and clear information, as well as contact details. Communication is facilitated through an email section integrated with EmailJS, and a map is also integrated using an API to provide access to Google services. The design is elegantly tailored to fit the app's theme and the customers' preferences  and is fully responsive, ensuring optimal usability on both desktop and mobile devices. </h6>
-            <img src="images4/html-1.png" alt="">
-            <img src="images4/html-2.png" alt="">
-            <img src="images4/html-3.png" alt="">
-            <img src="images4/html-4.png" alt="">
-            <img src="images4/html-5.png" alt="">
-            <img src="images4/html-6.png" alt="">
-            <img src="images4/html-7.png" alt="">
-            <img src="images4/html-8.png" alt="">
-            <img src="images4/html-9.png" alt="">
-            <img src="images4/html-10.png" alt="">
-            <img src="images4/html-11.png" alt="">
-            <img src="images4/html-12.png" alt="">
-            <img src="images4/html-13.png" alt="">
-            <img src="images4/html-14.png" alt="">
-            <img src="images4/html-15.png" alt="">
-            <img src="images4/html-16.png" alt="">
-            <img src="images4/html-17.png" alt="">
-            <img src="images4/html-18.png" alt="">
-            <img src="images4/html-19.png" alt="">
-            <img src="images4/html-20.png" alt="">
-            <img src="images4/html-21.png" alt="">
-            <img src="images4/html-22.png" alt="">
-            <img src="images4/html-23.png" alt="">
-            <img src="images4/html-24.png" alt="">
-            <img src="images4/html-25.png" alt="">
-        </div>
-    </section>
-
-    <section class="project-box4" id="project-box4">
-        <div class="project-box4">
-            <h6> React (Vite.js): Cinema Planet the web application is designed for online streaming subscriptions. Users can rent or purchase movies. Additionally, users can create an account to comment on and rate movies. They can also explore different categories for the latest releases, top upcoming movies, or series. The design is elegantly tailored to fit the app's theme and the customers' preferences  and is fully responsive, ensuring optimal usability on both desktop and mobile devices.    </h6>
-            <img src="images5/react1.png" alt="">
-            <img src="images5/react2.png" alt="">
-            <img src="images5/react3.png" alt="">
-            <img src="images5/react4.png" alt="">
-            <img src="images5/react5.png" alt="">
-            <img src="images5/react6.png" alt="">
-            <img src="images5/react7.png" alt="">
-            <img src="images5/react8.png" alt="">
-            <img src="images5/react9.png" alt="">
-            <img src="images5/react10.png" alt="">
-            <img src="images5/react11.png" alt="">
-            <img src="images5/react12.png" alt="">
-            <img src="images5/react13.png" alt="">
-            <img src="images5/react14.png" alt="">
-            <img src="images5/react15.png" alt="">
-      
-        </div>
-    </section>
+</body>
+</html>
 
 
-        <!-- contact section design -->
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me!</span></h2>
+     
 
-            <form onsubmit="sendEmail(); reset(); return false;">
-                <div class="input-box">
-                    <input type="text" id="name" placeholder="Full Name" required>
-                    <input type="email" id="email" placeholder="Email Address" required>
-                </div>
 
-                <div class="input-box">
-                    <input type="text" id="phone" placeholder="Mobile Number" required>
-                    <input type="text" id="subject" placeholder="Email Subject" required>
-                </div>
-                <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
-         </section>
 
-        <!-- <section class="References" id="references">
-            <div class="references">
-
-            <h1>References</h1>
-            <script>
-              fetch('http://jsonplaceholder.typicode.com/users')
-                  .then(res => {
-                    return res.json();
-                  })
-                    .then(data => {
-                      data.forEach(user => {
-                        const markup = `<li>${user.name}</li>`;
-        
-                        document.querySelector('#references').insertAdjacentHTML('beforeend', markup);
-                      })
-                    })
-                    .catch(error => console.log(error));
-            </script>
-          </section>*/-->
-
-        <!-- Implementing the email functions and token-->
-         <!--document.getElementById("email").value-->
-         <script src="https://smtpjs.com/v3/smtp.js"></script>
-         <script>
-             function sendEmail() {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
-    let subject = document.getElementById("subject").value;
-    let message = document.getElementById("message").value;
-
-    let body = "Name: " + name + "<br> Email: " + email + "<br> Phone: " + phone + "<br> Subject: " + subject + "<br> Messages: <br><br>" + message ;
-
-    Email.send({
-        SecureToken: "cd63db1c-49b9-438e-a822-0f1ffbb8a5f7",
-        To: 'alexander.gallorini@gmail.com',
-        From: "alexander.gallorini@gmail.com",
-        Subject: "New Message From Portfolio",
-        Body: body
-    }).then(
-        message => alert("Message Sent Successfully")
-    );
-}
-
-         </script>
-         
-        </script>
-
+       
         <!-- footer design -->
         <footer class="footer">
             <div class="footer-text">
-                <p>Copyright &copy; 2023 by IT - Högskolan | All Rights Reserved.</p>
+                <p>Copyright &copy; 2023 by Alexander Gallorini | All Rights Reserved.</p>
             </div>
 
             <div class="footer-iconTop">

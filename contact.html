@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio | Alexander Gallorini</title>
+
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+     <!-- Header design -->
+     <header class="header">
+
+            <!-- Logotyp -->
+            <a href="index.html" class="logo">Portfolio</a>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
+   
+        <!-- Navigering -->
+        <nav class="navbar">
+         
+                <!-- Hem länk -->
+               <a href="index.html" accesskey="h" class="active" aria-label="Hem">Home</a>
+
+                <!-- Om oss länk -->
+                <a href="about.html" accesskey="a" aria-label="Om oss">About</a>
+
+                <!-- Tjänster länk -->
+                <a href="services.html" accesskey="s" aria-label="Tjänster">Services</a>
+
+                <!-- Portfolio länk -->
+                <a href="portfolio.html" accesskey="p" aria-label="Portfolio">Portfolio</a>
+
+                <!-- Kontakt länk -->
+                <a href="contact.html" accesskey="c" aria-label="Kontakt">Contact</a>
+         <!-- Uncomment this if needed in the future -->
+            <!-- <a href="#references">References</a> -->
+        </nav>
+    </header>
+
+ <!-- contact section design -->
+ <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-box">
+            <input type="text" id="phone" placeholder="Mobile Number" required>
+            <input type="text" id="subject" placeholder="Email Subject" required>
+        </div>
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+ </section>
+
+<!-- <section class="References" id="references">
+    <div class="references">
+
+    <h1>References</h1>
+    <script>
+      fetch('http://jsonplaceholder.typicode.com/users')
+          .then(res => {
+            return res.json();
+          })
+            .then(data => {
+              data.forEach(user => {
+                const markup = `<li>${user.name}</li>`;
+
+                document.querySelector('#references').insertAdjacentHTML('beforeend', markup);
+              })
+            })
+            .catch(error => console.log(error));
+    </script>
+  </section>*/-->
+
+<!-- Implementing the email functions and token-->
+ <!--document.getElementById("email").value-->
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+ <script>
+     function sendEmail() {
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let phone = document.getElementById("phone").value;
+let subject = document.getElementById("subject").value;
+let message = document.getElementById("message").value;
+
+let body = "Name: " + name + "<br> Email: " + email + "<br> Phone: " + phone + "<br> Subject: " + subject + "<br> Messages: <br><br>" + message ;
+
+Email.send({
+SecureToken: "cd63db1c-49b9-438e-a822-0f1ffbb8a5f7",
+To: 'alexander.gallorini@gmail.com',
+From: "alexander.gallorini@gmail.com",
+Subject: "New Message From Portfolio",
+Body: body
+}).then(
+message => alert("Message Sent Successfully")
+);
+}
+
+ </script>
+ 
+</script>
+
+
+     <!-- footer design -->
+     <footer class="footer">
+        <div class="footer-text">
+          <p>Copyright &copy; 2023 by Alexander Gallorini | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#contact"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    
+    <!-- scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="http://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+     <!-- custom js -->
+     <script src="script.js"></script>
+     </body>
+</html>
