@@ -482,12 +482,20 @@ span {
 
  
  @media (max-width: 1200px) {
+    .multiple-text {
+        font-size: 2.5rem; /* Adjust size for visibility on mobile */
+        display: inline;   /* Ensure it is displayed */
+      }
     html {
         font-size: 55%;
     }
  }
 
  @media (max-width: 991px) {
+    .multiple-text {
+        font-size: 2.5rem; /* Adjust size for visibility on mobile */
+        display: inline;   /* Ensure it is displayed */
+      }
     .header {
         padding: 2rem 3%;
     }
@@ -516,6 +524,8 @@ span {
     #menu-icon {
         display: block;
     }
+
+    
 
     .navbar {
         position: absolute;
@@ -578,12 +588,20 @@ span {
     }
  }
 @media (max-width: 617px) {
+    .multiple-text {
+        font-size: 2.5rem; /* Adjust size for visibility on mobile */
+        display: inline;   /* Ensure it is displayed */
+      }
     .portfolio-container {
         grid-template-columns: 1fr;
     }
 } 
 
 @media (max-width: 450px) {
+    .multiple-text {
+        font-size: 2.5rem; /* Adjust size for visibility on mobile */
+        display: inline;   /* Ensure it is displayed */
+      }
     html {
         font-size: 50%;
     }
@@ -594,6 +612,12 @@ span {
 }
 
 @media (max-width: 365px) {
+
+    .multiple-text {
+        font-size: 2.5rem; /* Adjust size for visibility on mobile */
+        display: inline;   /* Ensure it is displayed */
+      }
+      
     .home-img img {
         width: 90vw;
     }
