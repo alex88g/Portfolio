@@ -31,7 +31,7 @@ body {
     color: var(--text-color);
 }
 section {
-    min-height: 100vh;
+    min-height: 93.4vh;
     padding: 10rem 9% 2rem;
 }
 
@@ -54,7 +54,7 @@ section {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
@@ -62,7 +62,7 @@ section {
 }
 
 .navbar a {
-    font-size: 1.7rem;
+    font-size: 3rem;
     color: var(--text-color);
     margin-left: 4rem;
     transition: 3s;
@@ -118,10 +118,6 @@ section {
     
 }
 
-.home-content h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-}
 
 span {
     color: var(--main-color);
@@ -134,7 +130,50 @@ span {
 }
 
 .home-content p {
+    font-size: 2rem;
+    padding-right: 300px;
+}
+
+.home-content ul li{
+    font-size: 2rem;
+    padding-right: 300px;
+}
+
+
+
+/* Header styles for sections */
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Accent color */
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Unordered list for skills */
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+ul li {
+    
     font-size: 1.6rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Adding a custom bullet point to the list */
+ul li::before {
+    content: '•';
+    color: #70f; /* Accent color */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 2rem;
 }
 
 .social-media a {
@@ -199,36 +238,60 @@ span {
     margin: 20px;
 }
 
-.about-content h2 {
-    text-align: left;
-    line-height: 1.2;
+.about-content h3 {
+    margin-top: 20px;
+    font-size: 3rem;
+    color: #ffffff;
 }
 
-.about-content h3 {
-    font-size: 2.6rem;
+.about-content ul {
+    margin-left: 20px;
+    padding-left: 20px;
+   
+    font-size: 1.6rem;
+}
+
+.about-content ul ul {
+    margin-left: 20px;
+    padding-left: 20px;
+   
     
 }
 
 .about-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    line-height: 2;
+    font-size: 3rem;
 }
 
-.about-content h5 {
-    font-size: 2.6rem;
+
+/* Services container styling */
+.services {
+    display: flex;
+    justify-content: center;  /* Centers the content horizontally */
+    align-items: center;      /* Centers the content vertically */
+    flex-direction: column;   /* Stacks the items vertically */
+    padding: 100px 0;         /* Add padding to the top and bottom for spacing */
 }
 
+/* Styling for h2 */
 .services h2 {
     margin-bottom: 5rem;
+    margin-top: 0;            /* Adjust top margin if necessary */
+    text-align: center;       /* Ensures the text is centered */
 }
 
+/* Styling for the services container */
 .services-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: center;   /* Centers the items horizontally within the container */
+    align-items: center;       /* Aligns the items vertically within the container */
+    flex-wrap: wrap;           /* Allows wrapping of items if necessary */
+    gap: 2rem;                 /* Adds space between the items */
+    max-width: 1200px;         /* Optional: Set a max width to prevent stretching */
+    width: 100%;               /* Ensures it takes up full width but doesn't stretch too much */
+    margin: 0 auto;            /* Centers the container horizontally */
 }
+
 
 .services-container .services-box {
     flex: 1 1 30rem;
@@ -262,13 +325,22 @@ span {
 
 }
 
+/* Ensure the parent container of the h2 is a flex container */
 .portfolio {
-    background: var(--second-bg-color);
+    display: flex;
+    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;      /* Vertically centers the content */
+    flex-direction: column;   /* Ensures the items stack vertically if needed */
+        
+    background: var(--second-bg-color);        /* Optional: makes the container take full viewport height */
 }
 
+/* Style for the h2 */
 .portfolio h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem;  /* Keeps the bottom margin */
+    text-align: center;    /* Optional: ensures the text inside h2 is centered */
 }
+
 
 .portfolio-container {
     display: grid;
@@ -283,6 +355,8 @@ span {
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    
+    
 }
 
 .portfolio-box img {
@@ -325,60 +399,360 @@ span {
     display: flex;
 }
 
-.project-box img {
-    width: 15%;
-    height: 15%;
-    margin-left:  20px;
-    margin-top: 100px;
+
+
+.project-box01 img {
+    display: block;  /* Gör att `margin: auto` fungerar */
+    margin: 10px auto; /* Auto centrering på sidorna */
+    width: 100%;
+    max-width: 400px;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
+
+/* Hover effekt för bilder */
+.project-box01 img:hover {
+    transform: scale(1.05);  /* Gör bilden något större när man hovrar */
+}
+
+/* För att styla projekt-boxen */
+.project-box01 {
+    display: flex;
+    flex-wrap: wrap; /* Gör att bilderna kan radbrytas */
+    justify-content: center; /* Centrerar bilderna horisontellt */
+    padding: 20px;
+    padding-top: 100px;
+    
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* För rubriker */
+.project-box01 h6 {
+    
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+/* För listan under rubriken */
+.project-box01 ul {
+   
+   margin-top: 100px;
+    font-size: 3em;
+}
+
+/* För list-items */
+.project-box01 ul li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.project-box00 img {
+    display: block;  /* Gör att `margin: auto` fungerar */
+    margin: 10px auto; /* Auto centrering på sidorna */
+    width: 100%;
+    max-width: 400px;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effekt för bilder */
+.project-box00 img:hover {
+    transform: scale(1.05);  /* Gör bilden något större när man hovrar */
+}
+
+/* För att styla projekt-boxen */
+.project-box00 {
+    display: flex;
+    flex-wrap: wrap; /* Gör att bilderna kan radbrytas */
+    justify-content: center; /* Centrerar bilderna horisontellt */
+    padding: 20px;
+    padding-top: 100px;
+    
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* För rubriker */
+.project-box00 h6 {
+    
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+/* För listan under rubriken */
+.project-box00 ul {
+   
+   margin-top: 100px;
+    font-size: 3em;
+}
+
+/* För list-items */
+.project-box00 ul li {
+    margin-bottom: 10px;
+}
+
+
+
+.project-box img {
+    display: block;  /* Gör att `margin: auto` fungerar */
+    margin: 10px auto; /* Auto centrering på sidorna */
+    width: 100%;
+    max-width: 400px;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effekt för bilder */
+.project-box img:hover {
+    transform: scale(1.05);  /* Gör bilden något större när man hovrar */
+}
+
+/* För att styla projekt-boxen */
+.project-box {
+    display: flex;
+    flex-wrap: wrap; /* Gör att bilderna kan radbrytas */
+    justify-content: center; /* Centrerar bilderna horisontellt */
+    padding: 20px;
+    padding-top: 100px;
+    
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* För rubriker */
+.project-box h6 {
+    
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+/* För listan under rubriken */
+.project-box ul {
+   
+   margin-top: 100px;
+    font-size: 3em;
+}
+
+/* För list-items */
+.project-box ul li {
+    margin-bottom: 10px;
+}
+
 
 .project-box2 img {
-    width: 19%;
-    height: 19%;
-    margin-left: 20px;
-    margin-top: 20px;
+    display: block;  /* Gör att `margin: auto` fungerar */
+    margin: 10px auto; /* Auto centrering på sidorna */
+    width: 100%;
+    max-width: 400px;
+    height: 850px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.project-box3 img {
-    width: 31%;
-    height: 31%;
-    margin-left: 20px;
-    margin-top: 100px;
+/* Hover effekt för bilder */
+.project-box2 img:hover {
+    transform: scale(1.05);  /* Gör bilden något större när man hovrar */
 }
+
+/* För att styla projekt-boxen */
+.project-box2 {
+    display: flex;
+    flex-wrap: wrap; /* Gör att bilderna kan radbrytas */
+    justify-content: center; /* Centrerar bilderna horisontellt */
+    padding: 20px;
+    padding-top: 100px;
+    
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* För rubriker */
+.project-box2 h6 {
+    
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+/* För listan under rubriken */
+.project-box2 ul {
+   
+   margin-top: 100px;
+    font-size: 3em;
+}
+
+/* För list-items */
+.project-box2 ul li {
+    margin-bottom: 10px;
+}
+
+
+
+/* För att hantera bilder i projektsektionen och göra dem samma storlek */
+.project-box02 img {
+    display: block;  /* Gör att `margin: auto` fungerar */
+    margin: 10px auto; /* Auto centrering på sidorna */
+    width: 100%;
+    max-width: 400px;
+    height: 850px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effekt för bilder */
+.project-box02 img:hover {
+    transform: scale(1.05);  /* Gör bilden något större när man hovrar */
+}
+
+/* För att styla projekt-boxen */
+.project-box02 {
+    display: flex;
+    flex-wrap: wrap; /* Gör att bilderna kan radbrytas */
+    justify-content: center; /* Centrerar bilderna horisontellt */
+    padding: 20px;
+    padding-top: 100px;
+    
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* För rubriker */
+.project-box02 h6 {
+    
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+/* För listan under rubriken */
+.project-box02 ul {
+   
+   margin-top: 100px;
+    font-size: 3em;
+}
+
+/* För list-items */
+.project-box02 ul li {
+    margin-bottom: 10px;
+}
+
+/* För att hantera bilder i projektsektionen och göra dem samma storlek */
+.project-box3 img {
+    display: block;  /* Gör att `margin: auto` fungerar */
+    margin: 10px auto; /* Auto centrering på sidorna */
+    width: 100%;
+    max-width: 400px;
+    height: 850px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effekt för bilder */
+.project-box3 img:hover {
+    transform: scale(1.05);  /* Gör bilden något större när man hovrar */
+}
+
+/* För att styla projekt-boxen */
+.project-box3 {
+    display: flex;
+    flex-wrap: wrap; /* Gör att bilderna kan radbrytas */
+    justify-content: center; /* Centrerar bilderna horisontellt */
+    padding: 20px;
+    padding-top: 100px;
+    
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* För rubriker */
+.project-box3 h6 {
+    
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+/* För listan under rubriken */
+.project-box3 ul {
+   
+   margin-top: 100px;
+    font-size: 3em;
+}
+
+/* För list-items */
+.project-box3 ul li {
+    margin-bottom: 10px;
+}
+
+
+
+
 
 .project-box4 img {
-    width: 31%;
-    height: 31%;
-    margin-left: 20px;
-    margin-top: 100px;
+    display: block;  /* Gör att `margin: auto` fungerar */
+    margin: 10px auto; /* Auto centrering på sidorna */
+    width: 100%;
+    max-width: 400px;
+    height: 850px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.project-box h6 {
-    font-size: 3rem;
-    margin-left: 20px;
-    margin-top: 100px;
+/* Hover effekt för bilder */
+.project-box4 img:hover {
+    transform: scale(1.05);  /* Gör bilden något större när man hovrar */
 }
 
-.project-box2 h6 {
-    font-size: 3rem;
-    margin-left: 20px;
-    margin-top: 100px;
-    margin-bottom: 0px;
-}
-
-.project-box3 h6 {
-    font-size: 3rem;
-    margin-left: 20px;
-    margin-top: 100px;
+/* För att styla projekt-boxen */
+.project-box4 {
+    display: flex;
+    flex-wrap: wrap; /* Gör att bilderna kan radbrytas */
+    justify-content: center; /* Centrerar bilderna horisontellt */
+    padding: 20px;
+    padding-top: 100px;
+    
   
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* För rubriker */
 .project-box4 h6 {
-    font-size: 3rem;
-    margin-left: 20px;
-    margin-top: 100px;
-  
+    
+    font-size: 4em;
+    margin-bottom: 20px;
 }
+
+/* För listan under rubriken */
+.project-box4 ul {
+   
+   margin-top: 100px;
+    font-size: 3em;
+}
+
+/* För list-items */
+.project-box4 ul li {
+    margin-bottom: 10px;
+}
+
 
 
 .portfolio-layer h4 {
@@ -405,15 +779,29 @@ span {
     color: var(--second-bg-color);
 }
 
-.contact h2 {
-    margin-bottom: 3rem;
+.contact {
+    display: flex;
+    justify-content: center;  /* Centers the content horizontally */
+    align-items: center;      /* Centers the content vertically */
+    flex-direction: column;   /* Stacks the items vertically */
+    padding: 100px 0;         /* Add padding to the top and bottom for spacing */
+    text-align: center;       /* Ensures the text is centered */
 }
 
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
+/* Styling for h2 in Contact */
+.contact h2 {
     margin-bottom: 3rem;
+    margin-top: 0;            /* Adjust top margin if necessary */
+    text-align: center;       /* Ensures the heading is centered */
+}
+
+/* Styling for contact form */
+.contact form {
+    max-width: 70rem;         /* Limits the width of the form */
+    margin: 1rem auto;        /* Centers the form horizontally and adds margin */
+    padding: 2rem;            /* Add padding inside the form for spacing */
+    text-align: center;       /* Centers the form text */
+    margin-bottom: 3rem;      /* Add bottom margin for spacing */
 }
 
 .contact form .input-box {
@@ -449,14 +837,18 @@ span {
 .footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
 }
 
+
 .footer-text p {
-    font-size: 1.6rem;
+    font-size: 3rem;
+    
+    
 }
 
 .footer-iconTop a {
@@ -467,6 +859,7 @@ span {
     background: var(--main-color);
     border-radius: .8rem;
     transition: .5s ease;
+    margin-left: 20px;
 }
 
 .footer-iconTop a:hover {
@@ -569,6 +962,7 @@ span {
     .about {
         flex-direction: column-reverse;
     }
+    
 
     .about img {
         width: 70vw;
