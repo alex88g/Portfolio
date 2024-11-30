@@ -27,10 +27,18 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
     background: var(--bg-color);
     color: var(--text-color);
+    
 }
 section {
+    
+    flex: 1; /* Allow this section to grow and fill available space */
+
     min-height: 93.4vh;
     padding: 10rem 9% 2rem;
 }
@@ -54,7 +62,7 @@ section {
 }
 
 .logo {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
@@ -62,7 +70,7 @@ section {
 }
 
 .navbar a {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--text-color);
     margin-left: 4rem;
     transition: 3s;
@@ -80,6 +88,7 @@ section {
     
 }
 
+
 .home {
     display:flex;
     justify-content: center;
@@ -88,6 +97,7 @@ section {
 }
 
 .home-img img {
+    margin: 300px;
     width: 20vw;
     animation: floatImage 4s ease-in-out infinite;
     border-radius: 100px;
@@ -131,12 +141,13 @@ span {
 
 .home-content p {
     font-size: 2rem;
-    padding-right: 300px;
+    margin: 20px;
+    
 }
 
 .home-content ul li{
     font-size: 2rem;
-    padding-right: 300px;
+    
 }
 
 
@@ -779,14 +790,17 @@ ul li::before {
     color: var(--second-bg-color);
 }
 
+
 .contact {
     display: flex;
     justify-content: center;  /* Centers the content horizontally */
     align-items: center;      /* Centers the content vertically */
     flex-direction: column;   /* Stacks the items vertically */
     padding: 100px 0;         /* Add padding to the top and bottom for spacing */
-    text-align: center;       /* Ensures the text is centered */
+    text-align: center; 
+          /* Ensures the text is centered */
 }
+
 
 /* Styling for h2 in Contact */
 .contact h2 {
@@ -846,7 +860,7 @@ ul li::before {
 
 
 .footer-text p {
-    font-size: 3rem;
+    font-size: 2rem;
     
     
 }
