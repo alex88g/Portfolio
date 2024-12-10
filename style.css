@@ -97,7 +97,6 @@ section {
 }
 
 .home-img img {
-    margin: 300px;
     width: 20vw;
     animation: floatImage 4s ease-in-out infinite;
     border-radius: 100px;
